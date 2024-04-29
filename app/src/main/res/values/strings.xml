@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BhaskaraForm</string>
+    <string name="a">Valor de a</string>
+    <string name="b">Valor de b</string>
+    <string name="c">Valor de c</string>
+    <string name="sol">Soluções: </string>
+    <string name="Resolver">Resolver</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="@string/a"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/c"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etB"
+        app:layout_constraintTop_toBottomOf="@+id/etB" />
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/b"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etA"
+        app:layout_constraintTop_toBottomOf="@+id/etA" />
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="@string/Resolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etC" />
+
+    <TextView
+        android:id="@+id/tvSol"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
