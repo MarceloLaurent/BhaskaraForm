@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.tvSol), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         float b = Float.parseFloat(etB.getText().toString());
         float c = Float.parseFloat(etC.getText().toString());
 
-        double delta = sqrt(b * b - 4 * a * c);
+        double delta = b * b - 4 * a * c;
 
         float x1 = (float) (-b - sqrt(delta)) / (2 * a);
         float x2 = (float) (-b + sqrt(delta)) / (2 * a);

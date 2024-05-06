@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,7 +11,7 @@
         android:id="@+id/etA"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="42dp"
         android:ems="10"
         android:hint="@string/a"
         android:importantForAutofill="no"
@@ -19,19 +20,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etC"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:hint="@string/c"
-        android:importantForAutofill="no"
-        android:inputType="numberSigned"
-        android:textColorHint="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/etB"
-        app:layout_constraintTop_toBottomOf="@+id/etB" />
 
     <EditText
         android:id="@+id/etB"
@@ -45,6 +33,19 @@
         android:textColorHint="@color/black"
         app:layout_constraintStart_toStartOf="@+id/etA"
         app:layout_constraintTop_toBottomOf="@+id/etA" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/c"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/etB"
+        app:layout_constraintTop_toBottomOf="@+id/etB" />
 
     <Button
         android:id="@+id/btnRes"
